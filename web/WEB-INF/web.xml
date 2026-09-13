@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>EncryptServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.EncryptServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DecryptServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.DecryptServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HistoryServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.HistoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EncryptServlet</servlet-name>
+        <url-pattern>/EncryptServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DecryptServlet</servlet-name>
+        <url-pattern>/DecryptServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HistoryServlet</servlet-name>
+        <url-pattern>/HistoryServlet.do</url-pattern>
+    </servlet-mapping>
+</web-app>
